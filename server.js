@@ -268,7 +268,7 @@ function mongoConnect() {
     var mongoURL = process.env.MONGO_URL || 'mongodb://username:password@mongodb:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false';
     var client = mongoClient.connect(mongoURL,
       {
-        // Mutable & Immutablehjh
+        // Mutable & Immutable
         //tlsCAFile: `/home/roboshop/user/rds-combined-ca-bundle.pem` //Specify the DocDB; cert
         // Container
         tlsCAFile: `/app/rds-combined-ca-bundle.pem` //Specify the DocDB; cert
@@ -305,4 +305,3 @@ const port = process.env.USER_SERVER_PORT || '8080';
 app.listen(port, () => {
     logger.info('Started on port', port);
 });
-
