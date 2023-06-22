@@ -6,7 +6,7 @@ const express = require('express');
 const pino = require('pino');
 const expPino = require('express-pino-logger');
 
-// MongoDB12
+// MongoDB11
 var db;
 var usersCollection;
 var ordersCollection;
