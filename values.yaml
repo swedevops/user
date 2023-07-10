@@ -1,1 +1,2 @@
 appName: user
+params: "dev.user.documentdb dev.user.redis_host dev.user.mongo_url"
